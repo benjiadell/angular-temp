@@ -29,9 +29,15 @@ Angular 2: Getting Started - SnapShot 1
 ----------
 
 
-**Enlaces del curso**
+#### Enlaces del curso
+
+
  - [Introduction](https://app.pluralsight.com/player?course=angular-2-getting-started-update&author=deborah-kurata&name=angular-2-getting-started-update-m1&clip=0&mode=live)
+
+
  - [First Things First](https://app.pluralsight.com/player?course=angular-2-getting-started-update&author=deborah-kurata&name=angular-2-getting-started-update-m2&clip=0&mode=live)
+
+
  - [Introduction to Components](https://app.pluralsight.com/player?course=angular-2-getting-started-update&author=deborah-kurata&name=angular-2-getting-started-update-m3&clip=0&mode=live)
  
  
@@ -49,6 +55,9 @@ Angular 2: Getting Started - SnapShot 1
  - Más rápido (renderizado, eventos y binding)
  - Actualizado a los últimos estándares de JS
  - API simplificada y orientado a productividad
+
+
+.
 
 
 ----------
@@ -81,6 +90,9 @@ Una aplicación Angular 2 contiene un módulo principal o módulo Root pero se p
  ![enter image description here](https://i.imgur.com/V28Dzc3.jpg)
 
 
+.
+
+
 ----------
 
 
@@ -90,7 +102,7 @@ Una aplicación Angular 2 contiene un módulo principal o módulo Root pero se p
 ----------
 
 
-**Escojer el lenguaje**
+#### Escojer el lenguaje
 
 
 Angular 2 soporta gran variedad de lenguajes. Para el curso utilizaremos TypeScript como lenguaje de desarrollo.
@@ -103,11 +115,11 @@ Angular 2 soporta gran variedad de lenguajes. Para el curso utilizaremos TypeScr
 
 
 
-**Escojer el editor**
+####Escojer el editor
 
 
 Al desarrollar principalmente en JS y TypeScript podemos utilizar tanto editores como IDE's para el desarrollo de nuestras aplicaciones: Atom, Eclipse, VS. En este curso utilizaremos:
- - **Visual Studio Code (Windows, Mac y Linux)**
+ - Visual Studio Code (Windows, Mac y Linux)
 
 
 
@@ -141,14 +153,20 @@ Al desarrollar principalmente en JS y TypeScript podemos utilizar tanto editores
 Los componentes en angular tienen:
 
 
- - **View**: Es la template del componente. El código HTML.
+ - View: Es la template del componente. El código HTML.
 
 
- - **Componente**: Código TypeScript con la lógica de presentación (métodos, propiedades)
+ - Componente: Código TypeScript con la lógica de presentación (métodos, propiedades)
 
 
- - **Metadatos**: Un **Decorator** que se encargará de hacer público nuestro componente como directiva HTML y asociar la View y el código del componente. 
+ - Metadatos: Un **Decorator** que se encargará de hacer público nuestro componente como directiva HTML y asociar la View y el código del componente. 
+
+
  ![enter image description here](https://i.imgur.com/BCR27MK.png)
+
+
+.
+
 
 
 #### Desarrollo de un componente
@@ -158,6 +176,11 @@ Como podemos observar en este caso se ha creado un componente con una **Template
 
 
 ![enter image description here](https://i.imgur.com/j2FoQFG.png)
+
+
+.
+
+
 
 
 #### Carga de módulos de Angular
@@ -177,6 +200,10 @@ Angular expone otros módulos separados para otras tareas como por ejemplo:
 
 
 ![enter image description here](https://i.imgur.com/r6tcVpc.png)
+
+
+.
+
 
 
 #### Orden en la carga de los módulos
@@ -200,7 +227,15 @@ El orden de ejecución de una aplicación angular se puede ver ilustrado en la i
  **5. app.component.ts:** Finalmente el componente define en su Decorator que su "tag" html será "`<pm-app></pm-app>`" y que la template definida solo cargará un div con un título. El título es una propiedad del componente con un valor definido.
  
 
+.
+
+
+
 ![enter image description here](https://i.imgur.com/A6rSYMa.png)
+
+
+.
+
 
 
 ----------
@@ -216,7 +251,7 @@ El objetivo es construir una aplicación Angular 2 con un componente simple.
 Para ellos clonamos des del repositorio una aplicación con una estructura básica y un componente básico.
 
 
-**Descargamos el código, restauramos las dependencias y abrimos el proyecto**
+#### Descargamos el código, restauramos las dependencias y abrimos el proyecto
 
 
     git clone https://github.com/tc-frontend/course_angular2_day1_snapshot1.git
@@ -226,25 +261,25 @@ Para ellos clonamos des del repositorio una aplicación con una estructura bási
     code .
   
 
-**Descripción de los pasos**
+#### Descripción de los pasos
 
 
- - **npm install**  -> Instala toda las dependencias 
+ - npm install  -> Instala toda las dependencias 
  
 
 ![](https://i.imgur.com/YdRTnGy.jpg)
 
 
- - **code .** -> Abre el proyecto en Visual Studio Code
+ - code . -> Abre el proyecto en Visual Studio Code
 
  
-**Compilamos y ejecutamos la aplicación**
+#### Compilamos y ejecutamos la aplicación
 
 
     npm start
 
 
- - **npm start** -> Transpila el código TypeScript, levanta un servidor y lanza la aplicación en un browser.
+ - npm start -> Transpila el código TypeScript, levanta un servidor y lanza la aplicación en un browser.
 
 
 ![](https://i.imgur.com/meUZzzD.jpg) 
@@ -256,7 +291,11 @@ Una vez transpilado el código tenemos que para cada componente TypeScript ***.t
 ![enter image description here](https://i.imgur.com/jxjWNLs.png)
 
 
-**¿Cómo se carga el módulo principal de Angular?**
+.
+
+
+
+#### ¿Cómo se carga el módulo principal de Angular? 
 
 
  - Se navega a **index.html**
@@ -271,10 +310,18 @@ Una vez transpilado el código tenemos que para cada componente TypeScript ***.t
 ![enter image description here](https://i.imgur.com/4KMWtt7.png)
 
 
-**Modificar el proyecto en ejecución**
+.
+
+
+
+####Modificar el proyecto en ejecución
 
 
     TODO: Explicar el BrowserSync
+
+
+.
+
 
 
 ## Acceder a la versión final 
