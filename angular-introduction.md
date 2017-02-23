@@ -125,11 +125,20 @@ Angular expone otros módulos separados para otras tareas como por ejemplo:
 
 El orden de ejecución de una aplicación angular se puede ver ilustrado en la imagen:
 
- **1. index.html:** System.import se encarga de cargar el paquete de la aplicación
- **2. Systemjs.config.js:** Se encarga de definir cuál es el módulo principal de bootstrapping de la aplicación : **main.js**
- **3. main.ts:** Se encarga de referenciar al módulo principal e iniciar la aplicación llamando al bootstrap
- **4. app.module.ts:** Es el módulo principal y tiene importados todos los componentes que se van a utilizar declarando con el decorador **@ngModule** que el componente que se va a utilizar para el bootstrap es "**AppComponent"**
+ **1. index.html:** System.import se encarga de cargar el paquete de la aplicación.
+ 
+ 
+ **2. Systemjs.config.js:** Se encarga de definir cuál es el módulo principal de bootstrapping de la aplicación : **main.js**.
+ 
+ 
+ **3. main.ts:** Se encarga de referenciar al módulo principal e iniciar la aplicación llamando al bootstrap.
+ 
+ 
+ **4. app.module.ts:** Es el módulo principal y tiene importados todos los componentes que se van a utilizar declarando con el decorador **@ngModule** que el componente que se va a utilizar para el bootstrap es "**AppComponent"**.
+ 
+ 
  **5. app.component.ts:** Finalmente el componente define en su Decorator que su "tag" html será "`<pm-app></pm-app>`" y que la template definida solo cargará un div con un título. El título es una propiedad del componente con un valor definido.
+ 
  
 
 ![enter image description here](https://i.imgur.com/A6rSYMa.png)
