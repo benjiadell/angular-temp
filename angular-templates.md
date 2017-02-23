@@ -23,11 +23,15 @@ Las vistas o templates HTML de los componentes se pueden definir **Innine** o pu
 
 La creación de un componente siempre implica:
 
+
 1. Creación de un folder 
 2. Creación de un componente dentro del folder
 3. Creación de una template dentro del folder
  
+ 
  Ejemplo:
+ 
+ 
  **- folder:** nombre_componente
 
  **- componente:** nombre_componente.component.ts
