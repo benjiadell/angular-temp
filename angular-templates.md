@@ -46,8 +46,7 @@ Ejemplo:
 
 En el momento de asociar el componente y la template definiremos en el **Decorator** la propiedad **templateUrl**:
 
-![enter image description here](https://i.imgur.com/u60D6Nc.png)
-
+![enter image description here](https://i.imgur.com/tyNspLM.jpg)
 
 
 ----------
@@ -65,8 +64,7 @@ Una vez tenemos definido un componente con una template externa tenemos que cono
 
 Al exportarse el nuevo componente como **"pm-products"** tenemos la posibilidad de añadirlo directamente en la template del componente **root** de la aplicación.
 
-![enter image description here](https://i.imgur.com/9QyfusT.png)
-
+![enter image description here](https://i.imgur.com/iQYayVU.jpg)
 
 
 ----------
@@ -105,9 +103,8 @@ El siguiente paso será registrar el componente dentro del Módulo a fin de que 
 Angular mediante la interpolación permite mostrar propiedades y valores de retorno de funciones del componente dentro de las vistas HTML. 
 Hay varias formas de realizar la interpolación:
 
-![enter image description here](https://i.imgur.com/3cmzfnn.png)
+![enter image description here](https://i.imgur.com/XnolA73.jpg)
 
-![enter image description here](https://i.imgur.com/304izb3.png)
 
 
 
@@ -120,12 +117,13 @@ Hay varias formas de realizar la interpolación:
 ----------
 
 
-Angular mediante la interpolación permite mostrar propiedades y valores de retorno de funciones del componente dentro de las vistas HTML. 
-Hay varias formas de realizar la interpolación:
+Mediante el uso de directivas podemos realizar acciones condicionales y bucles en la template HTML para renderizar datos del componente:
  
 
-![enter image description here](https://i.imgur.com/s9MEtkg.png)
+![enter image description here](https://i.imgur.com/kHW1wd1.jpg)
 
+
+![enter image description here](https://i.imgur.com/TVMSmnz.jpg)
 
 
 ----------
