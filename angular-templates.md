@@ -1,4 +1,5 @@
 
+
 Angular 2: Getting Started - SnapShot 2
 ===================
 
@@ -24,19 +25,23 @@ Las vistas o templates HTML de los componentes se pueden definir **Innine** o pu
 La creación de un componente siempre implica:
 
 
-1. Creación de un folder 
+1. Creación de un folder
+
+
 2. Creación de un componente dentro del folder
+
+
 3. Creación de una template dentro del folder
  
  
- Ejemplo:
+Ejemplo:
  
  
- **- folder:** nombre_componente
+**- folder:** nombre_componente
 
- **- componente:** nombre_componente.component.ts
+**- componente:** nombre_componente.component.ts
  
- **- template:** nombre_componente.component.html
+**- template:** nombre_componente.component.html
  
 
 En el momento de asociar el componente y la template definiremos en el **Decorator** la propiedad **templateUrl**:
