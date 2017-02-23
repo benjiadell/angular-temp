@@ -3,7 +3,14 @@
 Angular 2: Getting Started - SnapShot 1
 ===================
 
-# Objetivos del Curso
+
+----------
+
+
+### 1 - Objetivos del Curso
+
+
+----------
 
 
  - Aprender los principales conceptos de Angular2
@@ -12,7 +19,15 @@ Angular 2: Getting Started - SnapShot 1
 
 ![enter image description here](https://i.imgur.com/S50z7av.png)	
 
-# Introducción
+
+----------
+
+
+### 2 - Introducción
+
+
+----------
+
 
 **Enlaces del curso**
  - [Introduction](https://app.pluralsight.com/player?course=angular-2-getting-started-update&author=deborah-kurata&name=angular-2-getting-started-update-m1&clip=0&mode=live)
@@ -36,14 +51,20 @@ Angular 2: Getting Started - SnapShot 1
  - API simplificada y orientado a productividad
 
 
+----------
 
 
-# Arquitectura de una aplicación
+### 3 - Arquitectura
+
+
+----------
 
 
 Una aplicacion Angular 2 está compuesta por un conjunto de componentes
 
+
 ![enter image description here](https://i.imgur.com/Nzr6btH.jpg)
+
 
 Cada componente se compone de:
  - Una Template HTML
@@ -53,18 +74,27 @@ Cada componente se compone de:
 
 ![enter image description here](https://i.imgur.com/po32QHz.jpg)
 
+
 Una aplicación Angular 2 contiene un módulo principal o módulo Root pero se pueden añadir más módulos para agrupar las diversas funcionalidades de una aplicación compleja.
+
 
  ![enter image description here](https://i.imgur.com/V28Dzc3.jpg)
 
 
+----------
 
-# First Things First
+
+### 4 - First Things First
 
 
-## Escojer el lenguaje
+----------
+
+
+**Escojer el lenguaje**
+
 
 Angular 2 soporta gran variedad de lenguajes. Para el curso utilizaremos TypeScript como lenguaje de desarrollo.
+
 
  - ES5
  - ES6 (transpiled)
@@ -73,7 +103,8 @@ Angular 2 soporta gran variedad de lenguajes. Para el curso utilizaremos TypeScr
 
 
 
-## Escojer el editor
+**Escojer el editor**
+
 
 Al desarrollar principalmente en JS y TypeScript podemos utilizar tanto editores como IDE's para el desarrollo de nuestras aplicaciones: Atom, Eclipse, VS. En este curso utilizaremos:
  - **Visual Studio Code (Windows, Mac y Linux)**
@@ -81,49 +112,78 @@ Al desarrollar principalmente en JS y TypeScript podemos utilizar tanto editores
 
 
 
-## Creamos y ejecutamos nuestra primera aplicación
+#### Creamos y ejecutamos nuestra primera aplicación
 
     TODO: Explicar cómo crear una nueva app con angular cli.
 
  
 
 
-## Diferencia entre módulos ES y Módulos en Angular
+#### Diferencia entre módulos ES y Módulos en Angular
 
     TODO: Explicar las diferencias
     
 ![enter image description here](https://i.imgur.com/XRFOSmM.png)
 
-# Introduction to Components
 
-## Estructura de un Componente
+----------
+
+
+### 5 - Introduction To Components
+
+
+----------
+
+
+#### Estructura de un Componente
+
 
 Los componentes en angular tienen:
+
+
  - **View**: Es la template del componente. El código HTML.
+
+
  - **Componente**: Código TypeScript con la lógica de presentación (métodos, propiedades)
+
+
  - **Metadatos**: Un **Decorator** que se encargará de hacer público nuestro componente como directiva HTML y asociar la View y el código del componente. 
  ![enter image description here](https://i.imgur.com/BCR27MK.png)
 
-## Desarrollo de un componente
+
+#### Desarrollo de un componente
+
 
 Como podemos observar en este caso se ha creado un componente con una **Template HTML Inline**, una clase que define la lógica del componente y un Decorator, **@Component** , que es el que se encarga de exportar los metadatos del componente.  
 
+
 ![enter image description here](https://i.imgur.com/j2FoQFG.png)
 
-## Carga de módulos de Angular
+
+#### Carga de módulos de Angular
+
 
 En la sección anterior hemos podido observar como se hace un imports de un módulo en Angular. En el caso del componente, para poder utilizar el Decorator **@Component** se ha importado el módulo **"core"** de angular.
 Angular expone otros módulos separados para otras tareas como por ejemplo:
+
+
  - **router**: Para la navegación
+
+
  - **http**: para la comunicación con el backend
+
+
  - **animate**: para facilitar el uso de UI's enriquecidas
+
 
 ![enter image description here](https://i.imgur.com/r6tcVpc.png)
 
 
-## Orden en la carga de los módulos
+#### Orden en la carga de los módulos
+
 
 El orden de ejecución de una aplicación angular se puede ver ilustrado en la imagen:
+
 
  **1. index.html:** System.import se encarga de cargar el paquete de la aplicación.
  
@@ -139,17 +199,25 @@ El orden de ejecución de una aplicación angular se puede ver ilustrado en la i
  
  **5. app.component.ts:** Finalmente el componente define en su Decorator que su "tag" html será "`<pm-app></pm-app>`" y que la template definida solo cargará un div con un título. El título es una propiedad del componente con un valor definido.
  
- 
 
 ![enter image description here](https://i.imgur.com/A6rSYMa.png)
 
 
-## Ejercicio
+----------
+
+
+### Práctica
+
+
+----------
+
 
 El objetivo es construir una aplicación Angular 2 con un componente simple. 
 Para ellos clonamos des del repositorio una aplicación con una estructura básica y un componente básico.
 
+
 **Descargamos el código, restauramos las dependencias y abrimos el proyecto**
+
 
     git clone https://github.com/tc-frontend/course_angular2_day1_snapshot1.git
     cd course_angular2_day1_snapshot1
@@ -157,45 +225,60 @@ Para ellos clonamos des del repositorio una aplicación con una estructura bási
     npm install
     code .
   
+
 **Descripción de los pasos**
+
 
  - **npm install**  -> Instala toda las dependencias 
  
+
 ![](https://i.imgur.com/YdRTnGy.jpg)
+
 
  - **code .** -> Abre el proyecto en Visual Studio Code
 
  
-
 **Compilamos y ejecutamos la aplicación**
+
 
     npm start
 
+
  - **npm start** -> Transpila el código TypeScript, levanta un servidor y lanza la aplicación en un browser.
+
 
 ![](https://i.imgur.com/meUZzzD.jpg) 
 
+
 Una vez transpilado el código tenemos que para cada componente TypeScript ***.ts** se generan ficheros ***.js** y ***.map**.
+
 
 ![enter image description here](https://i.imgur.com/jxjWNLs.png)
 
+
 **¿Cómo se carga el módulo principal de Angular?**
 
+
  - Se navega a **index.html**
+
+
  - En la página se realiza la carga principal del módulo root de Angular que está dentro del folder **"app"**
+
+
  - Finalmente se ejecuta el código de **main.js**
+
 
 ![enter image description here](https://i.imgur.com/4KMWtt7.png)
 
+
 **Modificar el proyecto en ejecución**
+
 
     TODO: Explicar el BrowserSync
 
- 
-
-
 
 ## Acceder a la versión final 
+
 
 Si queremos ver la solucion final 
 
