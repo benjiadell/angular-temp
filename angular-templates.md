@@ -13,7 +13,7 @@ En esta sección cubriremos los siguientes puntos de Pluralsight:
 ----------
 
 
-**1. Definición de templates**
+### 1 - Definición de templates
 
 
 ----------
@@ -52,7 +52,7 @@ En el momento de asociar el componente y la template definiremos en el **Decorat
 ----------
 
 
-**2. Crear e importar un nuevo componente**
+### 2 - Crear e importar un nuevo componente
 
 
 ----------
@@ -70,7 +70,7 @@ Al exportarse el nuevo componente como **"pm-products"** tenemos la posibilidad 
 ----------
 
 
-**3. Registrar un nuevo componente**
+### 3 - Registrar un nuevo componente
 
 
 ----------
@@ -94,7 +94,7 @@ El siguiente paso será registrar el componente dentro del Módulo a fin de que 
 ----------
 
 
-**4. Interpolation**
+### 4 - Interpolation
 
 
 ----------
@@ -111,7 +111,7 @@ Hay varias formas de realizar la interpolación:
 ----------
 
 
-**6. Directivas**
+### 6 - Directivas
 
 
 ----------
@@ -129,7 +129,7 @@ Mediante el uso de directivas podemos realizar acciones condicionales y bucles e
 ----------
 
 
-**Práctica**
+### Práctica
 
 
 ----------
