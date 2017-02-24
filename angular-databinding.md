@@ -1,4 +1,5 @@
 
+
 Angular 2: Getting Started - SnapShot 3
 ===================
 En esta parte veremos estos contenidos del curso de Pluralshight:
@@ -98,10 +99,17 @@ Es posible generar un binding Two-way si se combina el Property Binding con el E
 - **NOTA**: Es más. Cuando se define un formulario completo en Angular con **ngForm** que se verá más adelante en este curso, en realidad lo que ocurre por debajo es que Angular está generando un **FormArray** de instancias de **FormControl** para todos los controles HTML del formulario.
 
 
-- **Es necesario incluir en el componente el Módulo de Forms de Angular**: 
+- **Es necesario incluir el Módulo de Forms de Angular en el app.module.ts**: 
 
 
     import { FormsModule } from '@angular/forms'
+    
+    @ngModule ({
+         imports : [
+            BrowseModule,
+            FormsModule
+         ],
+    ....
 
 
 
@@ -120,8 +128,16 @@ Es posible generar un binding Two-way si se combina el Property Binding con el E
 ----------
 
 
+Las Pipes son mecanismos para formatear valores antes de ser mostrados en la vista. Permite definir una transformación de datos asociada al Binding de una propiedad.
+
+Hay varias pipes predefinidas en Angular para formatear strings, números, moneda, fechas, etc. Incluso se pueden crear Pipes customizadas por nosotros.
 
 
+
+![enter image description here](https://i.imgur.com/LSYnF6E.jpg)
+
+
+.
 
 
 ----------
