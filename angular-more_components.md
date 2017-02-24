@@ -58,7 +58,7 @@ Gracias a TypeScript podemos crear interfaces para definir contratos de cualquie
 ----------
 
 
-#### 3 - Encapsuling styles
+### 3 - Encapsuling styles
 
 
 ----------
@@ -78,7 +78,7 @@ De la misma forma en que podemos tener referenciada la Template HTML con un path
 ----------
 
 
-#### 4 - Lifecycle hooks
+### 4 - Lifecycle hooks
 
 
 ----------
@@ -109,7 +109,7 @@ Estos eventos pueden ser utilizados para realizar ciertas acciones. Por ejemplo 
 ----------
 
 
-#### 5 - Custom pipes
+### 5 - Custom pipes
 
 
 ----------
@@ -140,7 +140,7 @@ Tal y como ya se ha comentado una Pipe sirve para formatear o transformar un obj
 ----------
 
 
-#### 6 - Relative paths with ModuleId
+### 6 - Relative paths with ModuleId
 
 
 ----------
@@ -196,7 +196,7 @@ Hacer uso de la declaración de componentes mediante **module.id**
 ----------
 
 
-#### 7 - Práctica
+### 7 - Práctica
 
 
 ----------
